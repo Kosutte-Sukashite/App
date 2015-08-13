@@ -9,6 +9,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 
@@ -26,7 +27,7 @@ public class ConfirmActivity extends Activity {
         TxtCreator txtCreator = new TxtCreator();
         hukidashi.setText(txtCreator.getTxt(alphaValue));
 
-        Button btn = (Button)findViewById(R.id.backButton);
+        ImageButton btn = (ImageButton)findViewById(R.id.backButton);
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
