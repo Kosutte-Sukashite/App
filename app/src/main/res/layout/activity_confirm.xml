@@ -32,6 +32,30 @@
 
     </FrameLayout>
 
+    <ImageView
+        android:layout_width="52dp"
+        android:layout_height="52dp"
+        android:id="@+id/imageView"
+        android:src="@drawable/w_woman2"
+        android:layout_gravity="right|center_vertical"
+        android:scaleType="centerCrop"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/backButton"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/backButton" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/backButton"
+        android:background="@drawable/back"
+        android:src="@drawable/back"
+        android:layout_above="@+id/adView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
     <jp.co.imobile.sdkads.android.ImobileInlineView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -43,30 +67,5 @@
         iconTitleShadowEnable="false"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true" />
-
-    <ImageView
-        android:layout_width="52dp"
-        android:layout_height="52dp"
-        android:id="@+id/imageView"
-        android:src="@drawable/w_woman2"
-        android:layout_gravity="right|center_vertical"
-        android:scaleType="fitXY"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentTop="true"
-        android:layout_toEndOf="@+id/frameLayout"
-        android:layout_alignLeft="@+id/adView"
-        android:layout_alignStart="@+id/adView"
-        android:layout_alignParentBottom="true" />
-
-    <ImageButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/backButton"
-        android:layout_above="@+id/adView"
-        android:layout_alignLeft="@+id/adView"
-        android:layout_alignStart="@+id/adView"
-        android:background="@drawable/back"
-        android:src="@drawable/back" />
 
 </RelativeLayout>

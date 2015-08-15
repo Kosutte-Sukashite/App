@@ -100,25 +100,20 @@ public class Game_Activity extends Activity {
     }
 
     private void Createbackgrund() {
-        int ram;
-        RelativeLayout layout = (RelativeLayout) findViewById(R.id.backgrund);
+        //乱数
         Random rnd = new Random();
+        //画像名配列
+        String[] imageNameAry= {"w_woman1","orange","black"};
+        int ram = rnd.nextInt(imageNameAry.length);
 
-        ram = rnd.nextInt(3);
-        if(ram == 2) {
-            layout.setBackgroundResource(R.drawable.w_woman1);
-            //ここの画像名を別の画像に変更
-        }
+        //画像名
+        String imageName = imageNameAry[ram];
 
-        if(ram == 1) {
-            layout.setBackgroundResource(R.drawable.cool_woman);
-        }
+        //リソースID
+        int rid = getResources().getIdentifier(imageName, "drawable", getPackageName());
 
-        if(ram == 0){
-            layout.setBackgroundResource(R.drawable.positive_woman);
-           // ここのsampleを別の画像名に変更
-        }
-
+        RelativeLayout layout = (RelativeLayout) findViewById(R.id.backgrund);
+        layout.setBackgroundResource(rid);
     }
 
 
